@@ -1,5 +1,7 @@
-package Game;
+package Game.service;
 
+
+import Game.model.GameField;
 
 import java.util.Random;
 

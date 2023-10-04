@@ -1,4 +1,6 @@
-package Game;
+package Game.service;
+
+import Game.model.GameField;
 
 public class WinnerVerifier {
     public boolean isUserWin(GameField gameField) {
