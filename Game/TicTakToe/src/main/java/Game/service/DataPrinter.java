@@ -18,16 +18,17 @@ public class DataPrinter {
 
     public void printGameTable(GameField gameField) {
         StringBuilder stringBuilder = new StringBuilder();
-        stringBuilder.append("-------------\n");
+        stringBuilder.append("=============\n");
         for (int i = 0; i < 3; i ++) {
+            stringBuilder.append("|");
             for (int j = 0; j < 3; j++) {
-                stringBuilder.append("| " + gameField.getSign(new Cell(2-i,j)) +
-                        " | " + gameField.getSign(new Cell(2-i,j)) +
-                        " | " + gameField.getSign(new Cell(2-i,j)) +  " |\n");
-                stringBuilder.append("-------------\n");
+                stringBuilder.append(" ");
+                stringBuilder.append(gameField.getSign(new Cell(2-i,j)));
+                stringBuilder.append(" |");
             }
+            stringBuilder.append("\n");
         }
-        stringBuilder.append("-------------\n");
-        System.out.println(stringBuilder.toString());
+                stringBuilder.append("=============\n\n");
+        System.out.println(stringBuilder);
     }
 }
