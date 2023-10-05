@@ -18,8 +18,6 @@ public class WinnerVerifier {
         Integer counterRows = 0, counterCols = 0, counterD1 = 0, counterD2 = 0;
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
-                // Cols = i,j
-                // Rows = j,i
                 if (gameField.getSign(new Cell(i, j)) == sign) counterCols++;
                 if (gameField.getSign(new Cell(j, i)) == sign) counterRows++;
             }

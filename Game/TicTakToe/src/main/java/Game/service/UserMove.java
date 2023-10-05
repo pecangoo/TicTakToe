@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class UserMove {
     public void make(GameField gameField) {
-
+        System.out.println("Player step");
         final Scanner scanner = new Scanner(System.in);
         while (true) {
             System.out.println("Please type number between 1 and 9:\n");
@@ -25,8 +25,8 @@ public class UserMove {
                 } else {
                     System.out.println("Can\'t make a move," +
                             " because the cell is not free! Try again!");
+                    continue;
                 }
-                break;
             } catch (InputMismatchException ex) {
                 scanner.nextLine();
             }

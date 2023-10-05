@@ -7,6 +7,7 @@ import java.util.Random;
 
 public class ComputerMove {
     public void make(GameField gameField) {
+        System.out.println("Computer step");
         final Random random = new Random();
         while (true) {
             final int row = random.nextInt(3);

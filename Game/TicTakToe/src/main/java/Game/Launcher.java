@@ -8,7 +8,7 @@ public final class Launcher {
                 new DataPrinter(),
                 new UserMove(),
                 new WinnerVerifier(),
-                new DrawVerifier());
+                new CellVerifier());
         game.start();
     }
 }
