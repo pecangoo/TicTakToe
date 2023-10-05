@@ -1,9 +1,16 @@
 package Game.service;
 
+import Game.model.Cell;
 import Game.model.GameField;
 
 public class DrawVerifier {
     public boolean isDraw(GameField gameField) {
-        return false;
+        for (int i = 0; i <3; i++){
+            for (int j =0; j<3; j++) {
+                if (gameField.getSign(new Cell(i, j)) == ' ')
+                    return false;
+            }
+        }
+        return true;
     }
 }
